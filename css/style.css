@@ -27,14 +27,12 @@
 body {
   height: 100vh;
   margin: 0 15%;
-  padding: var(--size1) 0;
+  font-family: Arial, Helvetica, sans-serif;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* gap: var(--size1); */
-
 }
 
 img {
@@ -76,7 +74,6 @@ header img {
 
 #container {
   position: relative;
-
 }
 
 #main-nav {
