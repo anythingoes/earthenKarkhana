@@ -14,12 +14,6 @@
   --size5: calc(var(--size4) * var(--scale));
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  line-height: 1.4;
-}
 
 a {
   text-decoration: none;
@@ -75,7 +69,7 @@ body {
   justify-self: end;
 
   display: flex;
-  gap: var(--size-3);
+  gap: var(--size-2);
 }
 
 .header__socials a {
@@ -83,12 +77,6 @@ body {
   width: 22px;
   height: 22px;
 }
-
-.header__socials-img {
-  width: 22px;
-  height: auto;
-}
-
 
 
 
