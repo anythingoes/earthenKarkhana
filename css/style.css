@@ -30,6 +30,12 @@ li {
   list-style: none;
 }
 
+
+
+/*********************/
+/*     #HEADER       */
+/*********************/
+
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -76,4 +82,16 @@ li {
 
 .header__socials>*+* {
   margin-left: var(--size-1);
+}
+
+
+
+
+/*********************/
+/*     #HOMEPAGE       */
+/*********************/
+
+.hero__img {
+  max-width: 100vw;
+  height: auto;
 }
