@@ -1,6 +1,6 @@
 window.addEventListener('load', (e) => {
   console.log('Loaded');
-  document.querySelector("body").removeClass("preload");
+  document.querySelector("body").classList.remove("preload");
 });
 
 
