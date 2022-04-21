@@ -48,6 +48,10 @@ body {
   overflow-x: hidden;
 }
 
+.preload * {
+  animation: none !important;
+}
+
 .hero::before {
   z-index: 100;
 }
