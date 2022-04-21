@@ -1,3 +1,8 @@
+window.addEventListener('load', (e) => {
+  console.log('Loaded');
+});
+
+
 const slideImages = Array.from(document.querySelectorAll(".hero__img"));
 slideImages.forEach((img, index) => {
   if (index > 0) img.style.display = "none";
@@ -10,7 +15,6 @@ setInterval(function () {
   slideImages[0].style.zIndex = 10;
   slideImages[0].style.display = "block";
   fadeOut(img);
-  console.log(slideImages[0]);
 }, 5000);
 
 function fadeOut(img) {
