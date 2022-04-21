@@ -5,9 +5,14 @@ slideImages.forEach((img, index) => {
 
 setInterval(function () {
   const img = slideImages.shift();
-  img.style.display = "none";
+  img.style.zIndex = 0
   slideImages.push(img);
+  slideImages[0].style.zIndex = 10;
   slideImages[0].style.display = "block";
-  // console.log(slideImages[0]);
+  fadeOut(img);
+  console.log(slideImages[0]);
 }, 5000);
 
+function fadeOut(img) {
+  setTimeout(function () { img.style.display = "none" }, 3000);
+}
