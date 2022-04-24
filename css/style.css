@@ -258,6 +258,11 @@ body {
   width: 30%;
 }
 
+.about__img img {
+  max-width: 100%;
+  height: auto;
+}
+
 .about__container {
   display: flex;
   flex-wrap: wrap;
@@ -275,8 +280,9 @@ body {
   margin-top: var(--size3);
 }
 
-.about__text>h3+p {
-  margin-top: var(--size-2);
+.about__text--principal+p,
+.about__text--company+p {
+  margin-top: var(--size-1);
 }
 
 .about blockquote {
