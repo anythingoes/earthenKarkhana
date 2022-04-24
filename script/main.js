@@ -4,14 +4,12 @@ window.addEventListener('load', (e) => {
   slideShow();
 });
 
-
-const slideImages = Array.from(document.querySelectorAll(".hero__img"));
-slideImages.forEach((img, index) => {
-  if (index > 0) img.style.display = "none";
-});
-
-
 function slideShow() {
+  const slideImages = Array.from(document.querySelectorAll(".hero__img"));
+  slideImages.forEach((img, index) => {
+  if (index > 0) img.style.display = "none";
+  });
+  
   setInterval(function () {
     const img = slideImages.shift();
     img.style.zIndex = 0
