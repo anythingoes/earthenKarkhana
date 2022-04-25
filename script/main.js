@@ -11,9 +11,9 @@ function slideShow() {
   const slideImages = Array.from(document.querySelectorAll(".image-slider__img"));
 
   slideImages.forEach((img, index) => {
-  if (index > 0) img.style.display = "none";
+    if (index > 0) img.style.display = "none";
   });
-  
+
   setInterval(function () {
     const img = slideImages.shift();
     img.style.zIndex = 0
@@ -23,7 +23,7 @@ function slideShow() {
 
     // Static image not required to be visible once slide images are loaded in
     document.querySelector(".no-slide").style.opacity = 0;
-    
+
     fadeOut(img);
   }, 5000);
 }
