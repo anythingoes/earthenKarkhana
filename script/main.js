@@ -4,7 +4,8 @@
 window.addEventListener('load', (e) => {
   console.log('Loaded');
   document.querySelector("body").classList.remove("preload");
-  slideShow();
+  setTimeout(slideShow, 5000);
+  // slideShow();
 });
 
 function slideShow() {
