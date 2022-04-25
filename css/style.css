@@ -49,9 +49,7 @@ body {
 }
 
 .body_text {
-  font-family: Helvetica,
-    Arial,
-    sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: var(--size-1);
   opacity: 0.8;
 }
@@ -106,7 +104,7 @@ body {
   align-items: flex-end;
   flex-wrap: wrap;
   gap: var(--size0);
-  font-size: var(--size-1);
+  /* font-size: var(--size-1); */
 }
 
 .header__nav-list>*+* {
@@ -365,6 +363,18 @@ body {
 }
 
 
+
+
+
+/*********************/
+/*     #CONTACT       */
+/*********************/
+
+.contact__address {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+}
 
 
 
