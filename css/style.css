@@ -43,15 +43,31 @@ li {
 }
 
 body {
+  font-family: Helvetica,
+    Arial,
+    sans-serif;
   width: 95%;
   margin: 0 auto;
   overflow-x: hidden;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .body_text {
-  font-family: Helvetica, Arial, sans-serif;
   font-size: var(--size-1);
   opacity: 0.8;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.sub-heading {
+  font-size: var(--size1);
+  font-weight: 500;
 }
 
 .preload * {
@@ -95,7 +111,6 @@ body {
   grid-area: menu;
   justify-self: end;
   align-self: center;
-
   line-height: 1;
 }
 
@@ -150,8 +165,6 @@ body {
 
 .header__socials a {
   display: block;
-  width: 22px;
-  height: 22px;
 }
 
 #current::after {
@@ -177,8 +190,6 @@ body {
 }
 
 .image-slider__img {
-  min-width: 100%;
-  height: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -188,10 +199,10 @@ body {
 }
 
 .no-slide {
-  position: static;
+  aspect-ratio: attr(width) / attr(height);
 }
 
-.image-slider::before {
+/* .image-slider::after {
   content: '';
   background: linear-gradient(to top,
       hsla(0, 0%, 100%, 0.29) 0%,
@@ -215,7 +226,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
 .image-slider__overlay {
   width: 100%;
@@ -231,30 +242,30 @@ body {
   left: 0;
 }
 
-.main__logo {
-  margin-bottom: var(--size1);
+.image-slider__overlay__logo {
+  margin-bottom: var(--size0);
 }
 
-.main__tagline {
+.image-slider__overlay__tagline {
   font-size: var(--size1);
   color: white;
 }
 
-.main__tagline>*+* {
+.image-slider__overlay__tagline>*+* {
   border-left: 1px solid white;
   padding-left: var(--size0);
 }
 
-.main__tagline--text {
-  margin-right: var(--size0);
+.image-slider__overlay__tagline--text {
+  padding-right: var(--size0);
 }
 
 
 
 
-/*********************/
-/*     #ABOUT       */
-/*********************/
+/****************************/
+/*          #ABOUT          */
+/****************************/
 
 .about {
   padding: var(--size3) 0;
@@ -263,7 +274,6 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: top;
   flex-wrap: wrap;
   gap: var(--size3);
 }
@@ -272,14 +282,10 @@ body {
   width: 30%;
 }
 
-.about__img img {
-  max-width: 100%;
-  height: auto;
-}
-
 .about__text {
-  max-width: 85ch;
+  max-width: 80ch;
   opacity: 0.9;
+  margin-top: -6px;
 }
 
 .about__text>*+* {
@@ -295,70 +301,50 @@ body {
   font-style: italic;
 }
 
-.about--principal span {
-  font-weight: bold;
-}
 
 
 
-
-
-
-/*********************/
-/*     #PROJECTS-MAIN       */
-/*********************/
+/****************************/
+/*      #PROJECTS-MAIN      */
+/****************************/
 
 .projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .projects-link {
-  padding: var(--size0) 0;
+  padding: var(--size2) 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.projects-link--img {
-  padding: var(--size-3);
-}
 
-.projects-link>p {
-  margin-top: var(--size-6);
-}
-
-.projects-link--img {
-  max-width: 70%;
+.projects-link--heading {
+  margin-top: var(--size-3);
 }
 
 
 
 
 
-/*********************/
-/*     #PROJECTS-DETAIL       */
-/*********************/
+/******************************/
+/*      #PROJECTS-DETAIL      */
+/******************************/
 
-.project {
+.project-detail {
   width: 85ch;
   margin: 0 auto;
   padding-top: var(--size1);
 }
 
-.project h2 {
-  font-weight: normal;
-  font-size: var(--size1);
+.project-detail>*+* {
+  margin-top: var(--size0);
 }
 
-.project h2+p {
-  margin-bottom: var(--size-3);
-}
-
-.project img {
+.project-detail__image-list>*+* {
   margin-top: var(--size2);
 }
 
@@ -371,21 +357,24 @@ body {
 /*********************/
 
 .contact {
-  display: flex;
+  padding: var(--size0) 0;
+  /* width: 61%; */
+  /* display: flex;
+  gap: var(--size5); */
 }
 
 .contact__img {
   max-width: 35%;
 }
 
-.contact__img img {
-  max-width: 100%;
-}
-
 .contact__address {
   display: flex;
   flex-direction: column;
   gap: var(--size-3);
+}
+
+.contact__address>*+* {
+  padding-top: var(--size-3);
 }
 
 

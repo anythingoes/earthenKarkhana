@@ -4,15 +4,17 @@
 window.addEventListener('load', (e) => {
   console.log('Loaded');
   document.querySelector("body").classList.remove("preload");
-  setTimeout(slideShow, 5000);
-  // slideShow();
+
+  // Static image not required to be visible once slide images are loaded in
+  setTimeout(() => document.querySelector(".no-slide").style.opacity = 0, 8000);
+  slideShow();
 });
 
 function slideShow() {
   const slideImages = Array.from(document.querySelectorAll(".image-slider__img"));
 
   slideImages.forEach((img, index) => {
-    if (index > 0) img.style.display = "none";
+    img.style.display = "none";
   });
 
   setInterval(function () {
@@ -21,9 +23,6 @@ function slideShow() {
     slideImages.push(img);
     slideImages[0].style.zIndex = 10;
     slideImages[0].style.display = "block";
-
-    // Static image not required to be visible once slide images are loaded in
-    document.querySelector(".no-slide").style.opacity = 0;
 
     fadeOut(img);
   }, 5000);
