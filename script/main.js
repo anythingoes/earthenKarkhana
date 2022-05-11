@@ -1,14 +1,32 @@
 "use strict";
 
+let navbar = document.querySelector('header');
+
+// Sticky navbar
+window.addEventListener("scroll", e => {
+  let scrollPos = window.scrollY;
+  console.log(`scrollPos: ${scrollPos}`);
+
+  if (scrollPos > 0) {
+    navbar.classList.add("header--sticky");
+  } else {
+    navbar.classList.remove("header--sticky");
+  }
+});
+
+
+
 // Wait for all images to load before starting slideshow 
 window.addEventListener('load', (e) => {
-  console.log('Loaded');
   document.querySelector("body").classList.remove("preload");
+
+  if (document.querySelectorAll(".image-slider__img").length == 0) return;
 
   // Static image not required to be visible once slide images are loaded in
   setTimeout(() => document.querySelector(".no-slide").style.opacity = 0, 8000);
   slideShow();
 });
+
 
 function slideShow() {
   const slideImages = Array.from(document.querySelectorAll(".image-slider__img"));
