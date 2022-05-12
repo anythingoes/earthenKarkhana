@@ -356,7 +356,7 @@ img {
 /******************************/
 
 .project-detail {
-  width: 85ch;
+  max-width: 85ch;
   margin: 0 auto;
 }
 
