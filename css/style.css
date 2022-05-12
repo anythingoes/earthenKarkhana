@@ -107,17 +107,12 @@ img {
 
   text-transform: uppercase;
   padding: var(--size1) var(--size0);
-  opacity: 0.8;
-}
-
-.header--sticky {
+  opacity: 0.9;
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-
   background-color: #fff;
-  opacity: 0.9;
 }
 
 .header__logo {
@@ -281,7 +276,7 @@ img {
 }
 
 .projects__main {
-  display: none;
+  /* display: none; */
 }
 
 
@@ -332,7 +327,7 @@ img {
 /****************************/
 
 .projects {
-  width: 70%;
+  padding: 0 15%;
   margin: 0 auto;
 }
 
@@ -484,11 +479,8 @@ img {
     padding: 0 15%;
   }
 
-  .projects {
-    width: 70%;
-  }
-
-  .about {
+  .about,
+  .project-detail {
     padding: 0 15%;
   }
 
