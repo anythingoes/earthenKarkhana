@@ -77,10 +77,6 @@ img {
   animation: none !important;
 }
 
-.hero::before {
-  z-index: 100;
-}
-
 .main__overlay {
   z-index: 200;
 }
@@ -229,6 +225,7 @@ img {
 
 .image-slider {
   position: relative;
+  overflow-x: hidden;
 }
 
 .image-slider__img {
@@ -276,7 +273,7 @@ img {
 }
 
 .projects__main {
-  /* display: none; */
+  display: none;
 }
 
 
