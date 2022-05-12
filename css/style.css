@@ -426,7 +426,7 @@ img {
 @media (max-width: 700px) {
 
   body {
-    padding: 0 var(--size3);
+    padding: 0 0;
   }
 
   .header {
@@ -459,6 +459,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 var(--size0);
   }
 
   .footer__socials {
@@ -482,6 +483,9 @@ img {
   .projects__main {
     display: block;
     margin-top: var(--size5);
+    max-width: 70%;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .projects {
