@@ -29,6 +29,7 @@ window.addEventListener('load', (e) => {
 
 
 function slideShow() {
+  console.log('start animation');
   const slideImages = Array.from(document.querySelectorAll(".image-slider__img"));
 
   slideImages.forEach((img, index) => {
@@ -44,6 +45,7 @@ function slideShow() {
 
     fadeOut(img);
   }, 5000);
+  // window.requestAnimationFrame(slideShow);
 }
 
 function fadeOut(img) {
