@@ -44,9 +44,10 @@ li {
 
 body {
   min-height: 100%;
-  font-family: Helvetica,
+  /* font-family: Helvetica,
     Arial,
-    sans-serif;
+    sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   overflow-x: hidden;
 
   display: flex;
@@ -54,9 +55,17 @@ body {
   justify-content: space-between;
 }
 
+main {
+  flex-grow: 2;
+}
+
 img {
   max-width: 100%;
   height: auto;
+}
+
+address {
+  font-style: normal;
 }
 
 .body_text {
@@ -374,28 +383,53 @@ img {
 /*     #CONTACT       */
 /*********************/
 
-.contact {
-  padding: var(--size0) 0;
-  /* width: 61%; */
-  /* display: flex;
-  gap: var(--size5); */
+
+.contact__info {
+  min-height: 90vh;
+  max-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.contact__img {
-  max-width: 35%;
+.contact__info--img {
+  flex: 2 1 calc((55rem - 100%) * 999);
+  background: url("../img/project3-14.webp") center center/cover;
 }
 
-.contact__address {
+.contact__info--details {
+  flex: 4 1 calc((55rem - 100%) * 999);
+  align-self: center;
+  padding: 0 4%;
+
   display: flex;
   flex-direction: column;
-  gap: var(--size-3);
+  gap: var(--size5);
 }
 
-.contact__address>*+* {
-  padding-top: var(--size-3);
+.contact__info--details>*>*:not(:last-child) {
+  margin-bottom: var(--size-5);
 }
 
+.contact__info--details>* {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--size-2);
+  margin-left: var(--size0);
+}
 
+.contact__info--details>*>* {
+  flex: 1 1 calc((40rem - 100%) * 999);
+}
+
+.contact__info--text {
+  font-weight: 300;
+}
+
+.contact__heading {
+  font-size: var(--size2);
+  font-weight: 300;
+  color: #1c2833;
+}
 
 
 
@@ -417,7 +451,7 @@ img {
 /*      #MEDIA QUERY      */
 /**************************/
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
   .header {
     display: grid;
