@@ -447,7 +447,8 @@ address {
   transform: translate3d(0, 0.2em, 0);
 }
 
-.contact__social-media--links>*+* {
+.contact__social-media--links>*+*,
+.contact__phone--numbers>*+* {
   margin-top: var(--size-6);
 }
 
