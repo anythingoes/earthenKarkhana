@@ -393,8 +393,6 @@ address {
 
 
 .contact__info {
-  min-height: 90vh;
-  max-height: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -405,7 +403,7 @@ address {
 }
 
 .contact__info--details {
-  flex: 4 1 calc((55rem - 100%) * 999);
+  flex: 3 1 calc((55rem - 100%) * 999);
   align-self: center;
   padding: 0 4%;
 
@@ -546,5 +544,16 @@ address {
 
   .about__img {
     width: 70%;
+  }
+
+  .contact__info--img {
+    display: none;
+  }
+
+}
+
+@media (min-width: 901px) {
+  .contact__info {
+    min-height: 90vh;
   }
 }
