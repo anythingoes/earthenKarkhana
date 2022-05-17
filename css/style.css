@@ -285,6 +285,12 @@ address {
   display: none;
 }
 
+.projects-link--heading--main {
+  font-size: var(--size0);
+  font-weight: 300;
+  margin-bottom: var(--size0);
+}
+
 
 
 
