@@ -1,0 +1,12 @@
+---
+deployment: 
+  tasks:
+    - export DEPLOYPATH=/home3/earthenk/public_html/
+    - /bin/cp -R css $DEPPLOYPATH
+    - /bin/cp -R img $DEPPLOYPATH
+    - /bin/cp -R projects $DEPPLOYPATH
+    - /bin/cp -R script $DEPPLOYPATH
+    - /bin/cp about.html $DEPPLOYPATH
+    - /bin/cp contact.html $DEPPLOYPATH
+    - /bin/cp index.html $DEPPLOYPATH
+    - /bin/cp projects.html $DEPPLOYPATH
