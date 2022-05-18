@@ -10,3 +10,4 @@ deployment:
     - /bin/cp contact.html $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp projects.html $DEPLOYPATH
+    - /bin/cp sitemap.xml $DEPLOYPATH
