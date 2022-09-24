@@ -1,7 +1,6 @@
 "use strict";
 
 const slideImages = Array.from(document.querySelectorAll(".image-slider__img"));
-
 // Wait for page to load before starting slideshow
 window.addEventListener('load', (e) => {
   document.querySelector("body").classList.remove("preload");
@@ -24,7 +23,6 @@ function slideShow() {
 }
 
 function startSlideShow() {
-  console.log('starting slideshow');
   const img = slideImages.shift();
   img.style.zIndex = 0
   slideImages.push(img);

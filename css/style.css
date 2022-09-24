@@ -390,6 +390,10 @@ address {
   margin-top: var(--size2);
 }
 
+.project-detail__image-list>:last-child {
+  margin-bottom: var(--size4);
+}
+
 
 
 
