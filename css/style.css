@@ -74,13 +74,20 @@ address {
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .sub-heading {
   font-size: var(--size1);
   font-weight: 500;
 }
+
+.sub-heading__small {
+  font-size: calc(var(--size0) * 1.05);
+  font-weight: 400;
+  margin-bottom: calc(var(--size-3) * -1);
+}
+
 
 .preload * {
   animation: none !important;
