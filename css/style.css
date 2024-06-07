@@ -74,7 +74,7 @@ address {
 }
 
 .bold {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .sub-heading {
@@ -312,7 +312,7 @@ address {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: var(--size3);
+  gap: var(--size1);
 }
 
 .about__img {
@@ -331,7 +331,7 @@ address {
 
 .about--company>*+*,
 .about--principal>*+* {
-  margin-top: var(--size1);
+  margin-top: var(--size-5);
 }
 
 .about blockquote {
@@ -555,6 +555,7 @@ address {
 
   .about__img {
     width: 70%;
+    margin-bottom: var(--size3);
   }
 
   .contact__info--img {
