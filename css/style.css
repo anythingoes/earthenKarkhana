@@ -322,17 +322,17 @@ address {
 .about__text {
   max-width: 80ch;
   opacity: 0.9;
-  margin-top: -6px;
+  /* margin-top: -6px; */
 }
 
 .about__text>*+* {
-  margin-top: var(--size3);
+  margin-top: var(--size5);
 }
 
-.about--company>*+*,
+/* .about--company>*+*,
 .about--principal>*+* {
   margin-top: var(--size-5);
-}
+} */
 
 .about blockquote {
   font-style: italic;
