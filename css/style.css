@@ -488,13 +488,14 @@ address {
 #modal-close {
   top: 2%;
   right: 2%;
+  transform: translate(-50%, 50%);
   cursor: pointer;
 }
 
 #modal-previous {
   top: 50%;
   left: 2%;
-  transform: translate(-50%, -50%);
+  transform: translate(50%, -50%);
   cursor: pointer;
 }
 
@@ -667,6 +668,17 @@ address {
   .about,
   .project-detail {
     padding: 0 5%;
+  }
+
+  .project-detail--credo,
+  .galleryImg {
+    padding: 0 5%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .project-detail__text {
+    padding: 0;
   }
 
   .about__img {
