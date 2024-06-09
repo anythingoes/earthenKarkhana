@@ -464,7 +464,7 @@ address {
 }
 
 
-.modal-image {
+#modal {
   display: none;
   z-index: 2001;
   width: 100%;
