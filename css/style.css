@@ -464,6 +464,55 @@ address {
 }
 
 
+.modal-image {
+  display: none;
+  z-index: 2001;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(0, 0%, 86%, 0.9);
+}
+
+#modal-close,
+#modal-previous,
+#modal-next {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 3000;
+}
+
+#modal-close {
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
+}
+
+#modal-previous {
+  top: 50%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#modal-next {
+  top: 50%;
+  right: 2%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+#modalImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 90%;
+}
+
 
 /*********************/
 /*     #CONTACT       */
@@ -612,12 +661,12 @@ address {
   .projects__main {
     display: block;
     margin-top: var(--size5);
-    padding: 0 15%;
+    padding: 0 10%;
   }
 
   .about,
   .project-detail {
-    padding: 0 15%;
+    padding: 0 5%;
   }
 
   .about__img {
