@@ -438,6 +438,7 @@ address {
 .project-detail__image-gallery--img-7,
 .project-detail__image-gallery--img-8 {
   /* width: 245px; */
+  cursor: pointer;
   min-width: 382px;
   flex-shrink: 0;
   height: auto;
@@ -686,9 +687,24 @@ address {
     margin-bottom: var(--size3);
   }
 
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .contact__info--img,
   .project-detail__info--img {
     display: none;
+  }
+
+  .contact__heading,
+  .contact__info--text {
+    text-align: center;
+  }
+
+  .contact__info--details>*{
+    margin-left: 0;
   }
 
 }
