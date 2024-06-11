@@ -1,11 +1,7 @@
 "use strict";
 
-
-//New Project detail page gallery
 const regEx = /"(.*?)"/
-// const galleryContainer = document.querySelectorAll(".galleryImg");
 const images = Array.from(document.querySelectorAll(".galleryImg"))
-// console.log(images)
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modalImg")
 const modalCloseImg = document.getElementById("modal-close")
@@ -19,6 +15,19 @@ images.forEach((imgDiv, index) => imgDiv.addEventListener('click', () => openMod
 modalCloseImg.addEventListener('click', closeModal)
 modalNextImg.addEventListener('click', nextImg)
 modalPreviousImg.addEventListener('click', previousImg)
+window.document.onkeydown = checkKey;
+window.document.onkeydown = checkKey;
+window.document.onkeydown = checkKey;
+
+function checkKey(e) {
+    if (e.keyCode == '37') {
+        previousImg()
+    } else if (e.keyCode == '39') {
+        nextImg()
+    } else if (e.keyCode == '27') {
+        closeModal()
+    }
+}
 
 
 function openModal(imgDiv, index) {
@@ -28,7 +37,6 @@ function openModal(imgDiv, index) {
     modalImg.src = url
     modal.style.display = "block"
     document.body.style.overflow = "hidden"
-    console.log(currentImg)
 }
 
 function closeModal() {
@@ -40,11 +48,9 @@ function closeModal() {
 function nextImg() {
     let nextIndex = currentImg + 1 > numberOfImages ? 0 : currentImg + 1
     openModal(images[nextIndex], nextIndex)
-    console.log(nextIndex, images[nextIndex])
 }
 
 function previousImg() {
     let previousIndex = currentImg - 1 < 0 ? numberOfImages - 1 : currentImg - 1
-    console.log(previousIndex, images[previousIndex])
     openModal(images[previousIndex], previousIndex)
 }
