@@ -429,7 +429,6 @@ address {
 }
 
 .project-detail__image-gallery > * {
-  /* width: 245px; */
   cursor: pointer;
   min-width: 382px;
   flex-shrink: 0;
