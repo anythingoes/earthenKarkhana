@@ -129,10 +129,9 @@ address {
 
 .header__logo {
   font-family: 'Blogger Sans';
-  font-weight: normal;
-  grid-area: name;
-  font-weight: 400;
+  font-weight: 200;
   font-size: var(--size3);
+  color: hsl(0, 0%, 14%);
 }
 
 .header__nav {
