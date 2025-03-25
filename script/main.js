@@ -24,14 +24,14 @@ function slideShow() {
 
 function startSlideShow() {
   const img = slideImages.shift();
-  img.style.zIndex = 0
   slideImages.push(img);
   slideImages[0].style.zIndex = 10;
   slideImages[0].style.display = "block";
-
+  
   removePreviousImage(img);
 }
 
 function removePreviousImage(img) {
-  setTimeout(function () { img.style.display = "none" }, 3000);
+  img.style.zIndex = 0
+  setTimeout(function () { img.style.display = "none"}, 3000);
 }
